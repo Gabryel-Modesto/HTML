@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULÁRIO</title>
+</head>
+
+<body>
+    <h1>FORMULÁRIO</h1>
+    <form action="">
+        <!-- TEXT -->
+        <label for="nome">Digite seu nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome...">
+        <br><br>
+        ===============================================================================
+        <!-- EMAIL -->
+        <label for="Email">Digite seu email:</label>
+        <input type="email" id="Email" name="Email" placeholder="Digite seu e-mail...">
+        <br><br>
+        ===============================================================================
+        <!-- PASSWORD -->
+        <label for="senha">Digite sua senha:</label>
+        <input type="password" id="senha" name="senha" placeholder="Digite sua senha...">
+        <br><br>
+        ===============================================================================
+        <!-- DATE, DATETIME-LOCAL, TIME -->
+        <label for="datNasc">Data de Nascimento: </label>
+        <input type="date" id="datNasc" name="datNasc">
+        <input type="datetime-local">
+        <input type="time">
+        <br><br>
+        ===============================================================================
+        <!-- TEL = TELEFONE -->
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" placeholder="Digite o telefone:">
+        <br><br>
+        ===============================================================================
+        <!-- BOTAO NORMAL -->
+        <label for="Botao">Botão</label>
+        <input type="button" id="button" name="button" value="Botão">
+        <br><br>
+        ===============================================================================
+        <!-- TEXTAREA -->
+        <label for="textao">Textão</label>
+        <textarea name="textao" placeholder="Insira um texto"></textarea>
+        <br><br>
+        ===============================================================================
+        <!-- COR -->
+        <label for="cor">Cor</label>
+        <input type="color" id="cor" name="cor">
+        <br><br>
+        ===============================================================================
+        <!-- NUMBER -->
+        <label for="numero">Número</label>
+        <input type="number" id="numero" name="numero" min="0" max="100" value="0" step="1">
+        <br><br>
+        ===============================================================================
+        <!-- RANGE -->
+        <label for="range"> Barrinha: </label>
+        0<input type="range" id="range" name="range" value="50" min="0" max="100">100
+        <br><br>
+        ===============================================================================
+        <!-- RADIO -->
+        <label for="escolha">escolha seu curso: </label>
+        <br>
+        <input type="radio" id="escolha" name="escolha" value="automacao"> Automação
+        <input type="radio" id="escolha" name="escolha" value="eletrica"> Eletrica
+        <input type="radio" id="escolha" name="escolha" value="dds" checked> DDS
+        <br><br>
+        ===============================================================================
+        <!-- CHECKBOX -->
+        <label for="caixinha">Tecnologias</label>
+        <br>
+        <input type="checkbox" id="caixinha" name="caixinha" value="zap"> WhatsApp
+        <input type="checkbox" id="caixinha" name="caixinha" value="robo"> Robótica
+        <input type="checkbox" id="caixinha" name="caixinha" value="pneu"> Pneu
+        <input type="checkbox" id="caixinha" name="caixinha" value="predio"> Pédrio
+        <br><br>
+        ===============================================================================
+        <!-- SELECT -->
+        <label for="heroi">Escolha seu Herói:</label>
+        <select name="heroi" id="heroi">
+            <option value="batman">Batma</option>
+            <option value="flash">Flash</option>
+            <option value="kratos">Kratos</option>
+            <option value="knd">KnD</option>
+        </select>
+        ===============================================================================
+        <!-- BOTAO SUBMIT -->
+        <!-- Botão que faz envio para o formulário é o SUBMIT -->
+        <label for="enviar">Enviar</label>
+        <input type="submit" value="enviar">
+        ===============================================================================
+        <!-- BOTAO DE RESETAR -->
+        <label for="reset">Reset</label>
+        <input type="reset" value="reset">
+        ===============================================================================
+    </form>
+
+</body>
+
+</html>
