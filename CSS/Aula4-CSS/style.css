@@ -1,0 +1,49 @@
+#vermelho{
+    background-color: red;
+}
+#blue{
+    background-color: blue;
+    width: 500px;
+    height: 200px;
+    color: #fff;
+}
+
+.rosa{
+    background-color: #f0f;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+}
+
+/*
+PRIMEIRO NUMERO DA MARGIM VAI PARA CIMA
+SEGUNDO: VAI PARA DIREITA
+TERCIERO: VAI PARA BAIXO
+QUARTO: VAI PARA ESQUERDA
+*/
+#primeira{
+    margin-top: 30px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+}
+
+#segunda{
+    padding: 10px ;
+
+    padding-top: 20px;
+    padding-right: 15px;
+    padding-bottom: 30px;
+    padding-left: 5px;
+
+}
+
+#terceira{
+    border: 5px white solid;
+
+    border-width: 10px;
+    border-color: coral white yellow green;
+    border-style: solid;
+
+
+}
