@@ -1,21 +1,90 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ATIVIDADE 3 - HTML</title>
+    <title>Formulário Elaborado</title>
+    <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
-    <h1>FORMULÁRIO</h1>
+    <form action="index.html">
+        <h1>Formulário</h1>
+        <fieldset>
+            <legend>
+                <p>Dados pessoais</p>
+            </legend>
 
-    <div >
-        <label for="nome">Nome: </label>
-        <input type="text id" id="nome" name="nome">
-    </div>
+            <!--========INSERIR O NOME, ENDEREÇO E CIDADE======= -->
+            <label for="name">Nome: </label>
+            <input type="text" id="name" name="name" required>
+            <br><br>
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" name="endereco" required>
+            <br><br>
+            <label for="cidade">Cidade:</label>
+            <input type="text" name="cidade" id="cidade">
+            <!--==================================================-->
+            
+            <br><br>
 
+            <!-- =============SELETOR DE ESTADO================== -->
+            <label for="estado">Estado:</label>
+            <select name="estado" id="estado">
+                <option value="SP">São Paulo</option>
+                <option value="DF">Brasilia</option>
+                <option value="ES">Espirito Santo</option>
+                <option value="RJ">Rio de Janeiro</option>
+            </select>
+            <!-- ================================================ -->
 
+            <br><br>
+        </fieldset>
+        <fieldset>
+            <legend>
+                <p>Dados Profissionais</p>
+            </legend>
 
+            <!--===============SELETOR DE FUNÇÕES================-->
+            <label for="DadosProfissionais">Natureza do Cargo:</label>
+            <br>
+            <input type="radio" id="cargo-gerencia" name="DadosProfissionais"> Gerênca
+            <input type="radio" id="cargo-financeiro" name="DadosProfissionais"> Financeiro
+            <input type="radio" id="cargo-recepcao" name="DadosProfissionais"> Recepção
+            <input type="radio" id="cargo-adm" name="DadosProfissionais"> Administrativo
+            <input type="radio" id="cargo-juridico" name="DadosProfissionais"> Jurídico
+            <!-- ================================================ -->
 
-    
+            <br><br>
+
+            <!--===================CHECKBOX======================-->
+            <label for="interesse">Área de interesse</label>
+            <br>
+            <input type="checkbox" id="interesse-computacao" name="interesse"> Computação
+            <input type="checkbox" id="interesse-biologia" name="interesse"> Biologia
+            <input type="checkbox" id="interesse-meioAmbiente" name="interesse"> Meio Ambiente
+            <input type="checkbox" id="interesse-engenheria" name="interesse"> Engenharia
+            <input type="checkbox" id="interesse-Historia" name="interesse"> História
+            <!-- ================================================ -->
+
+            <br><br>
+
+            <!--===================TEXTAREA=======================-->
+            <label for="mini-curriculo">Mini Curriculo</label>
+            <textarea name="mini-curriculo" id="mini-curriculo"></textarea>
+            <!-- ================================================ -->
+
+            <br><br>
+        </fieldset>
+        <br><br>
+
+        <!--========================BOTÕES========================-->
+        <input type="submit">
+        <button type="reset">Limpar</button>
+        <!-- ==================================================== -->
+
+    </form>
 </body>
 </html>
