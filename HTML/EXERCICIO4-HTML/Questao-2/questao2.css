@@ -1,0 +1,13 @@
+body{
+    background-color: aqua;
+}
+
+.verdeClaro{
+    background-color: aquamarine;
+}
+
+.img1{
+    background-image: url(./ativiade.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}

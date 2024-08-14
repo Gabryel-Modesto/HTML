@@ -1,0 +1,28 @@
+body{
+    background-color: yellow;
+}
+#arial-Red{
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+}
+
+#times-Green{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    color: green;
+}
+
+#comic-azul{
+    font-family: "Comic Sans MS", sans-serif;
+    font-size: 20px;
+    color: blue;
+    font-style: italic;
+}
+
+#format-amarela{
+    font-size: 14px;
+    font-weight: 500;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
