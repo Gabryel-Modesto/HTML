@@ -8,7 +8,6 @@
 // var nulo = null;
 // var indefinida;
 
-
 // console.log(typeof(text));
 // console.log(typeof(number));
 // console.log(typeof(theBest));
@@ -85,7 +84,6 @@
 //     default:
 //         console.log("Animal");
 //         break;
-
 // };
 
 //=====================================================
@@ -130,7 +128,6 @@
 // alert(resposta + " " + resposta2);
 
 //=====================================================
-
 
 // ATIVIDADE
 // var N1 = Number(prompt("Informe um número: "));
