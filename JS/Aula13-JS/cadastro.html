@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cadastro</title>
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div id="caixa">
+        <span class="material-symbols-outlined">
+            person_add
+        </span>
+        <h1>CADASTRO</h1>
+        <form>
+            <input type="text" placeholder="Usuário" id="inputUserNew" class="inputForm">
+            <input type="email" placeholder="Email" id="inputEmailNew" class="inputForm">
+            <input type="password" placeholder="Senha" id="inputPasswordNew" class="inputForm">
+            <input type="password" placeholder="Confirmar senha" id="inputPasswordConfirme" class="inputForm">
+
+            <input type="submit" value="Entrar" id="inputCadastro"
+            class="inputBotao" onclick="cadastrar()">
+        </form>
+        <p>Já possui conta? <a href="index.html">Login</a> </p>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
