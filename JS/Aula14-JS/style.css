@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Open+sans", sans-serif;
+}
+
+body{
+    background: linear-gradient(to right, #a2d2ff, #bde0fe 65%,#bde0fe 40%, #8ecae6 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#relogio{
+display: flex;
+align-items: center;
+background-color: white;
+justify-content: space-around;
+width: 800px;
+height: 300px;
+border-radius: 10px;
+box-shadow:  10px 10px 15px #e4c1f9
+}
+
+.caixa{
+    height: 250px;
+    width: 250px;
+    background-color: #ffd6ff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 1px;
+}
+
+span{
+    font-weight: bolder;
+    font-size: 45px;
+}
+
+.tempo{
+    font-size: 30px;
+}
+
+#saudacao{
+    display: flex;
+    align-items: center;
+    width: 800px;
+    height: 200;
+    margin-bottom: 20px;
+
+}
+
+#saudacaoTexto{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 45px;
+}
