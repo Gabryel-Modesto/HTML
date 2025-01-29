@@ -1,0 +1,35 @@
+.padding-width{
+    background-color: #985;
+    color: #fff;
+    width: 400px;
+    padding: 40px;
+}
+
+.border-box{
+    background-color: #578;
+    color: #fff;
+    width: 400px;
+    padding: 40px; 
+    box-sizing: border-box;
+    
+}
+
+.border{
+    border: 5px solid #965;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.border2{
+    border: 2px dotted #583;
+    padding: 10;
+}
+
+.margin-top{
+    margin: 50px;
+}
+
+.margin{
+    margin: 10px;
+
+}

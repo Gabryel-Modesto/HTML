@@ -1,0 +1,12 @@
+.underline{
+  text-decoration: underline;
+}
+
+.line-trough{
+  text-decoration: line-through;
+}
+
+.semUnderline{
+  text-decoration: none;
+  color:#952;
+}
