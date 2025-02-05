@@ -7,6 +7,6 @@ const idade = 20;
 
 // 2 - prompt
 
-const age = prompt('Digite sua idade:')
+const age = prompt('Digite sua idade:');
 
-console.log(`Você tem ${agr} anos`)
+console.log(`Você tem ${agr} anos`);
