@@ -121,40 +121,139 @@
 // const latters = ['l', 'm', 'd', 'k']
 
 // 15 - FOREACH
-const nums = [1,2,3,4,5];
+// const nums = [1,2,3,4,5];
 
-nums.forEach((num) => {
-    console.log(`O número é: ${num}`)
-});
+// nums.forEach((num) => {
+//     console.log(`O número é: ${num}`)
+// });
 
-const posts = [
-    {title: "Primeiro Post", catogory: "JS" },
-    {title: "Segundo Post", catogory: "PY" },
-    {title: "Terceiro Post", catogory: "JAVA" }
-];
+// const posts = [
+//     {title: "Primeiro Post", catogory: "JS" },
+//     {title: "Segundo Post", catogory: "PY" },
+//     {title: "Terceiro Post", catogory: "JAVA" }
+// ];
 
-posts.forEach((post) => {
-    console.log(`Exibindo: ${post.title}, da categoria ${post.catogory}`)
-});
-
-
-//16 - includes
-
-const brands = ["BMW", "MECA", "RAM"];
-
-console.log(brands.includes("RAM"));
+// posts.forEach((post) => {
+//     console.log(`Exibindo: ${post.title}, da categoria ${post.catogory}`)
+// });
 
 
-if(brands.includes("BMW")) {
-    console.log('Há carros da marca BMW')
-};
+// //16 - includes
 
-//17 - reverse
+// const brands = ["BMW", "MECA", "RAM"];
 
-const reverseTeste = [1,2,3];
-reverseTeste.reverse();
-
-console.log(reverseTeste)
+// console.log(brands.includes("RAM"));
 
 
-//
+// if(brands.includes("BMW")) {
+//     console.log('Há carros da marca BMW')
+// };
+
+// //17 - reverse
+
+// const reverseTeste = [1,2,3];
+// reverseTeste.reverse();
+
+// console.log(reverseTeste)
+
+
+//18 - trim
+// const trimTest = "      testando\n            "
+
+// console.log(trimTest);
+
+// console.log(trimTest.trim());
+
+// console.log(trimTest.length)
+
+// console.log(trimTest.trim().length)
+
+//19 - padstart
+
+// const padTest = "5";
+
+// const nweNumver = padTest.padStart(5, "0")
+// console.log(padTest)
+// console.log(nweNumver)
+
+// // 20 - slip 
+// const frase = "PEga o macacoooo "
+// const arrayDaFrase = frase.split(" ")
+
+// console.log(arrayDaFrase)
+
+// // 21 - join
+// const fraseNova = arrayDaFrase.join(" ")
+// console.log(fraseNova)
+
+
+// // 22 - repet
+
+// const work = "Gabryel"
+// console.log(work.repeat(5))
+
+// 23 - rest operador / rest parameters 
+
+// const somaInfinity = (...args) => {
+//     let total = 0
+
+//     for(let i = 0; i <args.length; i++) {
+//         total += args[i]
+//     };
+//     return total;
+// };
+
+// console.log(somaInfinity(50,90,80))
+
+// // 24- for of
+
+// const sumInfanity = (...args) => {
+//  let total = 0
+ 
+//  for(num of args) {
+//     total += num
+//  }
+//  return total;
+// }
+
+
+// 25 - destructuring
+// const userDetails = {
+//     firstName: "Gabryel",
+//     lastName: "Modesto",
+//     job: "programmer"
+// };
+
+// const {firstName, lastName, job} = userDetails;
+
+// console.log(firstName, lastName, job);
+
+// //renomear variaveis
+
+// const {firstName: primeiroName} = userDetails;
+
+
+// console.log(firstName);
+
+// 26 - destructuring com array
+
+// const myList = ["Avisao", "Carro", "Bike"];
+
+// const [veiculoA, veiculoB, veiculoC] = myList;
+
+// console.log(veiculoA, veiculoB, veiculoC)
+
+// 27 - JSON
+
+const myJson = '{"name": "Gabryel", "age": 31, "skills": ["PHP", "JS", "PY"]}';
+
+console.log(myJson);
+
+//28 - JSON para obj e obj para JSON
+
+const myObject = JSON.parse(myJson)
+console.log(myObject)
+
+const myNewJSON = JSON.stringify(myObject)
+
+console.log(myNewJSON)
