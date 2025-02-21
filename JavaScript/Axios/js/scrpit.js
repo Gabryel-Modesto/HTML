@@ -4,14 +4,14 @@ console.log(axios);
 // 2 - first request
 const getData = async () => {
   try {
-    const response = await axios.get(
-      "https://jsonplaceholder.typicode.com/users",
-      //  4 - definindo headers  
+    const response = await postsFetch.get(
+      "/users",
+      //  4 - definindo headers
       {
         headers: {
           "Content-Type": "application/json",
           custom: "header",
-        }
+        },
       }
     );
 
@@ -27,16 +27,14 @@ getData();
 
 // 3 - Displaying data on the screen
 
-
 const container = document.querySelector("#user-container");
 
-const printData = async() => {
-  const data = await getData()
+const printData = async () => {
+  const data = await getData();
 
-  console.log(data)
+  console.log(data);
 
   data.forEach((user) => {
-
     const div = document.createElement("div");
 
     const nameElement = document.createElement("h2");
@@ -52,9 +50,22 @@ const printData = async() => {
     div.appendChild(emailElement);
 
     container.appendChild(div);
-
-  })
-
+  });
 };
 
 printData();
+
+// 5 - post
+const form = document.querySelector("#post-form");
+const titleInput = document.querySelector("#title");
+const bodyInput = document.querySelector("#body");
+
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  postsFetch.post("/posts", {
+    title: titleInput.value,
+    body: bodyInput.value,
+    userId: 1,
+  });
+});
