@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+html {
+    height: 100vh;
+}
+
 body {
     background-image: url("../Img/wolfgang-hasselmann-GKtf5t8xn7w-unsplash.jpg");
     background-position: center;
